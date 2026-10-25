@@ -3,11 +3,11 @@
 > **A Circular Economy for Campus Life: Verified Peer-to-Peer Academic Resource & Book Exchange Platform**  
 > *Developed for Design Thinking (HUM_4342) • Manipal Institute of Technology (MIT) Bengaluru, MAHE*
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-success.svg?style=flat-square&logo=github)](https://capsid85.github.io/CampusShare/)
 [![Course](https://img.shields.io/badge/Course-HUM__4342%20Design%20Thinking-0071e3.svg?style=flat-square)](https://manipal.edu/mitblr.html)
 [![Institution](https://img.shields.io/badge/Institution-MIT%20Bengaluru%20(MAHE)-ea580c.svg?style=flat-square)](https://manipal.edu/mitblr.html)
-[![Faculty Mentor](https://img.shields.io/badge/Faculty%20Mentor-Dr.%20Vandana%20Jha-059669.svg?style=flat-square)](#faculty-mentor)
-[![Tech Stack](https://img.shields.io/badge/Tech-HTML5%20%7C%20CSS3%20%7C%20JS%20%7C%20Python-6366f1.svg?style=flat-square)](#technology-stack)
-[![Deliverables](https://img.shields.io/badge/Deliverables-Prototype%20%2B%20Report%20%2B%20Deck%20%2B%20Poster-2563eb.svg?style=flat-square)](#project-deliverables)
+[![Faculty Mentor](https://img.shields.io/badge/Faculty%20Mentor-Dr.%20Vandana%20Jha-059669.svg?style=flat-square)](#contributors--mentorship)
+[![Tech Stack](https://img.shields.io/badge/Tech-HTML5%20%7C%20CSS3%20%7C%20JS%20%7C%20Python-6366f1.svg?style=flat-square)](#-repository-structure)
 [![License: MIT](https://img.shields.io/badge/License-MIT-slate.svg?style=flat-square)](LICENSE)
 
 ---
@@ -129,6 +129,9 @@ Conducted prototype walkthroughs and user testing with MIT Bengaluru batchmates 
 ## 💻 Live Interactive Prototype
 
 The prototype is built with clean HTML5, modern CSS3 (with glassmorphism and Apple Keynote aesthetics), and vanilla JavaScript. It requires no heavy dependencies or build tools.
+
+### 🌐 Live Hosted Prototype
+- **Live URL**: [https://capsid85.github.io/CampusShare/](https://capsid85.github.io/CampusShare/) *(Zero setup needed — click to explore on desktop or mobile)*
 
 ### Running Locally
 1. Clone this repository:
