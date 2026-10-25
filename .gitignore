@@ -1,3 +1,8 @@
+# Exclude presentation decks, reports, and posters from GitHub (shared privately via WhatsApp)
+*.pptx
+*.docx
+*.pdf
+
 # Temporary Microsoft Office lock files
 ~$*.docx
 ~$*.pptx

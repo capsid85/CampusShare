@@ -21,8 +21,8 @@ def generate_report():
     if len(doc.tables) > 0:
         table0 = doc.tables[0]
         if len(table0.rows) > 0 and len(table0.columns) > 1:
-            table0.rows[0].cells[0].text = "Submitted by:\n1. Sridhar Madhira\n2. Priyansh Kashyap (CSE - AI)"
-            table0.rows[0].cells[1].text = "Registration No:\n2309xxxxx\n235890468"
+            table0.rows[0].cells[0].text = "Submitted by:\n1. Sridhar Madhira (CSE - AI)\n2. Priyansh Kashyap (CSE - AI)"
+            table0.rows[0].cells[1].text = "Registration No:\n235890500\n235890468"
             for cell in table0.rows[0].cells:
                 for p in cell.paragraphs:
                     p.paragraph_format.space_after = Pt(2)

@@ -179,9 +179,10 @@ CampusShare/
 ├── build_report.py                          # Script formatting complete academic report document
 ├── update_poster.py                         # Script generating academic exhibition poster slide
 │
-├── Design Thinking_Presentation_Final.pptx  # Widescreen presentation deck (15 slides)
-├── Design Thinking Report.docx              # Comprehensive academic Design Thinking report
-├── Design Thinking Poster.pptx              # Exhibition poster deck
+├── [Locally Generated via Python Scripts]   # Kept local for privacy & shared via WhatsApp
+│   ├── Design Thinking_Presentation_Final.pptx
+│   ├── Design Thinking Report.docx
+│   └── Design Thinking Poster.pptx
 │
 └── [Screenshots & UI Assets]               # High-resolution rendered assets for reports & slides
     ├── clean_cards_two_col.png
@@ -264,7 +265,7 @@ If you are a teammate collaborating on this repository, please review [`TEAM_COL
 - **Course**: Design Thinking (HUM_4342)
 - **Institution**: Manipal Institute of Technology, Bengaluru, Manipal Academy of Higher Education (MAHE)
 - **Student Team**:
-  - **Sridhar Madhira** (Registration No: `2309xxxxx`)
+  - **Sridhar Madhira** — CSE (AI) (Registration No: `235890500`)
   - **Priyansh Kashyap** — CSE (AI) (Registration No: `235890468`)
 
 ---

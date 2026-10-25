@@ -28,29 +28,17 @@ All core design and engineering work for this project is completed:
 
 ## Step 1: Update Team Member Names & Registration Numbers
 
-Priyansh Kashyap's details (`CSE (AI) | 235890468`) and Sridhar Madhira have already been configured in all files. If you need to update your registration number or branch:
+Both team members' details have been configured across all files and generator scripts:
+- **Sridhar Madhira**: `CSE (AI) | 235890500`
+- **Priyansh Kashyap**: `CSE (AI) | 235890468`
 
-### 1. In `build_report.py` (Lines 24–25):
-```python
-table0.rows[0].cells[0].text = "Submitted by:\n1. Sridhar Madhira\n2. Priyansh Kashyap (CSE - AI)"
-table0.rows[0].cells[1].text = "Registration No:\n[Your Reg No]\n235890468"
-```
+> **Note on Deliverable Files:** To keep student presentation files and academic reports private, `*.pptx` and `*.docx` files are kept locally on your machine and shared directly with your teammate via WhatsApp or Drive. They are excluded from GitHub by `.gitignore`.
 
-### 2. In `build_presentation.py` (Slide 1 Names list):
-```python
-names = [
-    "1. Sridhar Madhira (Reg. No: [Your Reg No])",
-    "2. Priyansh Kashyap — CSE (AI) (Reg. No: 235890468)"
-]
-```
-
-### 3. In `update_poster.py` (Line 25):
-```python
-s.text_frame.text = "Team Members: Sridhar Madhira | Priyansh Kashyap [CSE (AI)]  •  Reg Nos: [Your Reg No] | 235890468\nMentor: Dr. Vandana Jha, Associate Professor  •  Manipal Institute of Technology Bengaluru, MAHE"
-```
-
-### 4. In `README.md` & `VIDEO_SCRIPT_AND_GUIDE.md`:
-Both documents already reflect **Sridhar** (Part 1) and **Priyansh Kashyap** (Part 2).
+### Configured Code References:
+- **`build_report.py`**: Configured with both names and registration numbers.
+- **`build_presentation.py`**: Slide 1 Title Card configured with both names and registration numbers.
+- **`update_poster.py`**: Banner configured with both names and registration numbers.
+- **`VIDEO_SCRIPT_AND_GUIDE.md`**: Word-for-word 2-speaker script with roles assigned to Sridhar (Part 1) and Priyansh (Part 2).
 
 ---
 

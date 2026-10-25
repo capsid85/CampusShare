@@ -160,7 +160,7 @@ def create_deck():
     p.space_after = Pt(6)
     
     names = [
-        "1. Sridhar Madhira (Reg. No: 2309xxxxx)",
+        "1. Sridhar Madhira | CSE (AI) (Reg. No: 235890500)",
         "2. Priyansh Kashyap | CSE (AI) (Reg. No: 235890468)"
     ]
     for n in names:
