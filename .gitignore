@@ -1,9 +1,9 @@
-# Exclude academic assignment scripts, documents, and slides
 *.pptx
 *.docx
 *.pdf
 CampusShare_Project_Handbook.*
 build_handbook_pdf.py
+ASYNCHRONOUS_VIDEO_RECORDING_GUIDE.md
 VIDEO_SCRIPT_AND_GUIDE.md
 TEAM_COLLABORATION_GUIDE.md
 build_presentation.py
