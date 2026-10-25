@@ -1,7 +1,15 @@
-# Exclude presentation decks, reports, and posters from GitHub (shared privately via WhatsApp)
+# Exclude academic assignment scripts, documents, and slides
 *.pptx
 *.docx
 *.pdf
+VIDEO_SCRIPT_AND_GUIDE.md
+TEAM_COLLABORATION_GUIDE.md
+build_presentation.py
+build_report.py
+update_poster.py
+requirements.txt
+slide*_rendered.png
+slide_problem_statement_rendered.png
 
 # Temporary Microsoft Office lock files
 ~$*.docx
