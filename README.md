@@ -127,13 +127,6 @@ CampusShare/
 
 ---
 
-## 👥 Authors
-
-- **Sridhar Madhira** ([@capsid85](https://github.com/capsid85)) — CSE (AI), MIT Bengaluru
-- **Priyansh Kashyap** — CSE (AI), MIT Bengaluru
-
----
-
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
