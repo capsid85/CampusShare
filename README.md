@@ -241,8 +241,8 @@ A complete word-for-word presentation script is prepared in [`VIDEO_SCRIPT_AND_G
 
 | Speaker | Phase / Section | Screen to Share | Time |
 |---|---|---|---|
-| **Member 1** | **Part 1:** Welcome, Academic Context, Empathy Phase, 5-Whys Analysis & Ideation | Slides 1 to 8 (PowerPoint Full-Screen `F11`) | ~2.5 – 3.0 mins |
-| **Member 2** | **Part 2:** Live Interactive Prototype Walkthrough, User Testing Feedback & Conclusion | Live Browser (`prototype/index.html` or GitHub Pages) & Slides 13 to 15 | ~3.0 – 3.5 mins |
+| **Member 1 (Sridhar)** | **Part 1:** Welcome, Academic Context, Empathy Phase, 5-Whys Analysis & Ideation | Slides 1 to 8 (PowerPoint Full-Screen `F11`) | ~2.5 – 3.0 mins |
+| **Member 2 (Priyansh Kashyap)** | **Part 2:** Live Interactive Prototype Walkthrough, User Testing Feedback & Conclusion | Live Browser (`prototype/index.html` or GitHub Pages) & Slides 13 to 15 | ~3.0 – 3.5 mins |
 
 *See [`VIDEO_SCRIPT_AND_GUIDE.md`](VIDEO_SCRIPT_AND_GUIDE.md) for recording platform checklist, webcam recommendations, and word-for-word lines.*
 
@@ -251,7 +251,7 @@ A complete word-for-word presentation script is prepared in [`VIDEO_SCRIPT_AND_G
 ## 🤝 Team Finishing & Submission Guide
 
 If you are a teammate collaborating on this repository, please review [`TEAM_COLLABORATION_GUIDE.md`](TEAM_COLLABORATION_GUIDE.md) for step-by-step instructions:
-1. **Update Student Details**: Insert your names and registration numbers into `build_report.py`, `build_presentation.py`, and `update_poster.py`.
+1. **Update Student Details**: Fill in your registration number in `build_report.py`, `build_presentation.py`, and `update_poster.py`.
 2. **Re-run the Python Scripts**: Regenerate the `.docx` and `.pptx` files with your names.
 3. **Record the Video**: Follow the 2-member script in [`VIDEO_SCRIPT_AND_GUIDE.md`](VIDEO_SCRIPT_AND_GUIDE.md) on Zoom/Google Meet.
 4. **Export Final Deliverables**: Save final copies of the Report (`.pdf` / `.docx`), Presentation (`.pptx` / `.pdf`), Poster (`.pptx`), and Video URL for submission on the academic portal.
@@ -264,8 +264,8 @@ If you are a teammate collaborating on this repository, please review [`TEAM_COL
 - **Course**: Design Thinking (HUM_4342)
 - **Institution**: Manipal Institute of Technology, Bengaluru, Manipal Academy of Higher Education (MAHE)
 - **Student Team**:
-  - Team Member 1 (Registration No: `2309xxxxx`)
-  - Team Member 2 (Registration No: `2309xxxxx`)
+  - **Sridhar Madhira** (Registration No: `2309xxxxx`)
+  - **Priyansh Kashyap** — CSE (AI) (Registration No: `235890468`)
 
 ---
 *Developed with deep human empathy for the MIT Bengaluru student community.*

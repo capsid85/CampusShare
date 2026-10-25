@@ -11,8 +11,8 @@
 
 | Speaker | Section / Topic | Screen / Slides to Show | Target Time |
 |---|---|---|---|
-| **Member 1** | **Part 1:** Welcome, Academic Context, Empathy Phase, 5-Whys Analysis & Ideation | Slides 1 to 8 (PowerPoint Full-Screen `F11`) | **~2.5 – 3.0 mins** |
-| **Member 2** | **Part 2:** Live Working Prototype Walkthrough, User Testing Feedback & Conclusion | Live Browser (`prototype/index.html` or GitHub Pages) & Slides 13 to 15 | **~3.0 – 3.5 mins** |
+| **Member 1 (Sridhar)** | **Part 1:** Welcome, Academic Context, Empathy Phase, 5-Whys Analysis & Ideation | Slides 1 to 8 (PowerPoint Full-Screen `F11`) | **~2.5 – 3.0 mins** |
+| **Member 2 (Priyansh Kashyap)** | **Part 2:** Live Working Prototype Walkthrough, User Testing Feedback & Conclusion | Live Browser (`prototype/index.html` or GitHub Pages) & Slides 13 to 15 | **~3.0 – 3.5 mins** |
 
 *Total Target Video Length: ~6.0 minutes (Well within the mandatory 5 to 7-minute rubric requirement).*
 
@@ -22,13 +22,13 @@
 
 ---
 
-### [0:00 – 2:45] Member 1: Introduction, Empathy & Problem Analysis
+### [0:00 – 2:45] Member 1 (Sridhar): Introduction, Empathy & Problem Analysis
 
 *(Share screen: PowerPoint Presentation in Slide Show mode `F11`)*  
 *(Start on Slide 1, then advance through Slides 2, 3, 4, 5, 6, 7, 8)*
 
 > **[Slide 1: Title Slide]**  
-> *"A very warm welcome to Dr. Vandana Jha ma'am and everyone evaluating our Design Thinking project. Today, my teammate [Member 2 Name] and I are presenting our project: **CampusShare**, a verified peer-to-peer campus resource and book exchange designed specifically for engineering students at MIT Bengaluru."*
+> *"A very warm welcome to Dr. Vandana Jha ma'am and everyone evaluating our Design Thinking project. Today, my teammate Priyansh Kashyap and I are presenting our project: **CampusShare**, a verified peer-to-peer campus resource and book exchange designed specifically for engineering students at MIT Bengaluru."*
 
 > **[Slide 2 & 3: Context & The Campus Problem]**  
 > *"Every semester, undergraduate engineering students are required to procure specialized academic supplies—such as B.S. Grewal's Higher Engineering Mathematics, Casio fx-991 scientific calculators, engineering drafters, and chemistry lab coats. Students incur heavy recurring out-of-pocket expenses purchasing brand-new supplies each term. The tragedy is that once end-semester examinations conclude, these expensive tools sit completely idle and neglected in hostel cupboards."*
@@ -57,16 +57,16 @@
 > *• **Buy at 75% Discount:** For permanent handover from graduating seniors.*  
 > *• **⚡ Flash Drops & Subscriptions:** For zero food waste and safe digital subscription splits.*  
 >
-> *Now, I will hand over the presentation to my teammate, [Member 2 Name], who will demonstrate our live interactive working prototype and discuss our user validation results."*
+> *Now, I will hand over the presentation to my teammate, Priyansh, who will demonstrate our live interactive working prototype and discuss our user validation results."*
 
 ---
 
-### [2:45 – 5:45] Member 2: Live Prototype Walkthrough & Key Innovations
+### [2:45 – 5:45] Member 2 (Priyansh Kashyap): Live Prototype Walkthrough & Key Innovations
 
 *(Member 2 shares screen: Browser showing `prototype/index.html` or live GitHub Pages demo: `https://capsid85.github.io/CampusShare/`)*
 
 > **[Show Navbar & Verification Badge]**  
-> *"Thank you, [Member 1 Name]. As you can see on the screen, this is our live working prototype for CampusShare.*  
+> *"Thank you, Sridhar. As you can see on the screen, this is our live working prototype for CampusShare.*  
 >
 > *Notice at the top right that platform access is restricted exclusively to verified `@learner.manipal.edu` student credentials. In the hero section, we display our three core design pillars: Zero Academic Waste, 100% Verified student accounts, and Zero Platform Intermediary Fees."*
 

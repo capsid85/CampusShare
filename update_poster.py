@@ -22,7 +22,7 @@ def update_poster():
                 p.font.bold = True
                 p.font.color.rgb = RGBColor(255, 255, 255)
         elif s.name == "Google Shape;93;p1":
-            s.text_frame.text = "Team Members: [Team Member 1 | Team Member 2]  •  Reg Nos: [2309xxxxx | 2309xxxxx]\nMentor: Dr. Vandana Jha, Associate Professor  •  Manipal Institute of Technology Bengaluru, MAHE"
+            s.text_frame.text = "Team Members: Sridhar Madhira | Priyansh Kashyap [CSE (AI)]  •  Reg Nos: [Your Reg No] | 235890468\nMentor: Dr. Vandana Jha, Associate Professor  •  Manipal Institute of Technology Bengaluru, MAHE"
             for p in s.text_frame.paragraphs:
                 p.alignment = PP_ALIGN.CENTER
                 p.font.color.rgb = RGBColor(241, 245, 249)

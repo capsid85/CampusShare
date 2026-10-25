@@ -28,33 +28,29 @@ All core design and engineering work for this project is completed:
 
 ## Step 1: Update Team Member Names & Registration Numbers
 
-Before final submission, replace the placeholder names (`Team Member 1`, `Team Member 2`, `2309xxxxx`) with your actual team details.
+Priyansh Kashyap's details (`CSE (AI) | 235890468`) and Sridhar Madhira have already been configured in all files. If you need to update your registration number or branch:
 
 ### 1. In `build_report.py` (Lines 24–25):
-Open `build_report.py` and update the two student names and registration numbers:
 ```python
-# Replace with your actual names and registration numbers:
-table0.rows[0].cells[0].text = "Submitted by:\n1. [Your Name]\n2. [Teammate Name]"
-table0.rows[0].cells[1].text = "Registration No:\n2309xxxxx\n2309xxxxx"
+table0.rows[0].cells[0].text = "Submitted by:\n1. Sridhar Madhira\n2. Priyansh Kashyap (CSE - AI)"
+table0.rows[0].cells[1].text = "Registration No:\n[Your Reg No]\n235890468"
 ```
 
 ### 2. In `build_presentation.py` (Slide 1 Names list):
-Update the author names in `build_presentation.py`:
 ```python
 names = [
-    "1. [Your Name] (Reg. No: 2309xxxxx)",
-    "2. [Teammate Name] (Reg. No: 2309xxxxx)"
+    "1. Sridhar Madhira (Reg. No: [Your Reg No])",
+    "2. Priyansh Kashyap — CSE (AI) (Reg. No: 235890468)"
 ]
 ```
 
 ### 3. In `update_poster.py` (Line 25):
-Open `update_poster.py` and update the author line:
 ```python
-s.text_frame.text = "Team Members: [Your Name] | [Teammate Name]  •  Reg Nos: [2309xxxxx | 2309xxxxx]\nMentor: Dr. Vandana Jha, Associate Professor  •  Manipal Institute of Technology Bengaluru, MAHE"
+s.text_frame.text = "Team Members: Sridhar Madhira | Priyansh Kashyap [CSE (AI)]  •  Reg Nos: [Your Reg No] | 235890468\nMentor: Dr. Vandana Jha, Associate Professor  •  Manipal Institute of Technology Bengaluru, MAHE"
 ```
 
 ### 4. In `README.md` & `VIDEO_SCRIPT_AND_GUIDE.md`:
-Update the team section at the bottom of `README.md` and the speaker names in `VIDEO_SCRIPT_AND_GUIDE.md`.
+Both documents already reflect **Sridhar** (Part 1) and **Priyansh Kashyap** (Part 2).
 
 ---
 

@@ -160,8 +160,8 @@ def create_deck():
     p.space_after = Pt(6)
     
     names = [
-        "1. Team Member 1 (Reg. No: 2309xxxxx)",
-        "2. Team Member 2 (Reg. No: 2309xxxxx)"
+        "1. Sridhar Madhira (Reg. No: 2309xxxxx)",
+        "2. Priyansh Kashyap | CSE (AI) (Reg. No: 235890468)"
     ]
     for n in names:
         p = tf_c1.add_paragraph()
