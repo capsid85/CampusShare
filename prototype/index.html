@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampusShare — Apple-Grade Peer-to-Peer Campus Exchange</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Apple-Style Global Sub-Nav / Announcement -->
+  <aside class="global-notice">
+    <div class="container notice-inner">
+      <span class="notice-badge">HUM_4342 Design Thinking</span>
+      <p class="notice-text">Phase 4: Verified Circular Campus Exchange • Exclusively for MIT Bengaluru</p>
+      <button class="notice-link" id="openDtModal">Methodology Details &rarr;</button>
+    </div>
+  </aside>
+
+  <!-- Navigation Bar (Glassmorphic) -->
+  <header class="app-nav">
+    <div class="container nav-wrap">
+      <div class="brand" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+        <span class="brand-glyph" style="display: flex; align-items: center; color: #0071e3;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M7 16V4m0 0L3 8m4-4l4 4m6 4v12m0 0l4-4m-4 4l-4-4"/>
+          </svg>
+        </span>
+        <div class="brand-copy">
+          <span class="brand-name">CampusShare</span>
+          <span class="brand-domain">MIT Bengaluru</span>
+        </div>
+      </div>
+
+      <div class="search-dock">
+        <svg class="search-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" id="searchInput" placeholder="Search textbooks, calculators, food, Netflix, Mac cases...">
+        <kbd class="search-kbd">⌘K</kbd>
+      </div>
+
+      <div class="nav-controls">
+        <div class="auth-pill" title="Verified Campus Domain Access">
+          <span class="auth-status-dot"></span>
+          <span>@learner.manipal.edu</span>
+        </div>
+        <button class="cta-pill primary" id="openPostModal">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+          <span>List Item</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section (Apple Keynote Aesthetic) -->
+  <section class="hero-stage">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <span class="hero-eyebrow">A Circular Economy for Campus Life</span>
+        <h1 class="hero-headline">Everything students need.<br><span class="headline-gradient">Directly from peers.</span></h1>
+        <p class="hero-subhead">Stop buying 1-semester gear and throwing away surplus meals. Borrow, rent, or buy textbooks, calculators, accidental online orders, and subscription splits safely on campus.</p>
+
+        <!-- Bento Metric Capsule -->
+        <div class="metrics-capsule">
+          <div class="metric-item">
+            <span class="metric-val">Zero Waste</span>
+            <span class="metric-lbl">Circular Campus Exchange</span>
+          </div>
+          <div class="metric-separator"></div>
+          <div class="metric-item">
+            <span class="metric-val">100% Verified</span>
+            <span class="metric-lbl">@learner.manipal.edu Only</span>
+          </div>
+          <div class="metric-separator"></div>
+          <div class="metric-item">
+            <span class="metric-val">Zero Platform Fee</span>
+            <span class="metric-lbl">Direct On-Spot UPI Handover</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Apple-Grade Segmented Controller & Filter Bar -->
+  <section class="control-shelf">
+    <div class="container">
+      <!-- Master Segmented Switcher (iOS / macOS Style) -->
+      <div class="segmented-control-wrap">
+        <div class="segmented-control" id="modeSegments">
+          <button class="segment-btn active" data-mode="all">All Items</button>
+          <button class="segment-btn" data-mode="academics">Books & Lab Gear</button>
+          <button class="segment-btn" data-mode="flash">Food & Hostel Surplus</button>
+          <button class="segment-btn" data-mode="subs">Subscriptions & OTT</button>
+          <button class="segment-btn" data-mode="sos">Exam SOS (1-Day)</button>
+          <button class="segment-btn" data-mode="borrow">Free to Borrow</button>
+        </div>
+      </div>
+
+      <!-- Secondary Refined Sub-Filter Chips -->
+      <div class="subfilter-strip">
+        <div class="chip-scroll" id="categoryPills">
+          <button class="filter-chip active" data-cat="all">Everything</button>
+          <button class="filter-chip" data-cat="textbook">Textbooks</button>
+          <button class="filter-chip" data-cat="calculator">Calculators</button>
+          <button class="filter-chip" data-cat="lab">Lab Aprons</button>
+          <button class="filter-chip" data-cat="food">Food & Snacks</button>
+          <button class="filter-chip" data-cat="tech">Tech & Gadgets</button>
+          <button class="filter-chip" data-cat="subs">Subscriptions</button>
+          <button class="filter-chip" data-cat="fitness">Gym & Health</button>
+          <button class="filter-chip" data-cat="apparel">Apparel Misfits</button>
+        </div>
+
+        <div class="control-accessories">
+          <div class="transparency-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Upfront Fixed Prices • Zero "DM" Spam</span>
+          </div>
+          <div class="dept-selector-wrap">
+            <select id="deptFilter" class="apple-select">
+              <option value="all">All Departments</option>
+              <option value="Common">1st Year Common</option>
+              <option value="CSE">CSE / IT / AI</option>
+              <option value="ECE">ECE / EEE</option>
+              <option value="Mech">Mechanical</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Product Grid -->
+  <main class="gallery-stage">
+    <div class="container">
+      <div class="gallery-meta">
+        <h2 class="gallery-title" id="listingsCountTitle">Available Resources (10 items)</h2>
+        <div class="activity-indicator">
+          <span class="active-pulse"></span>
+          <span>Live Campus Feed</span>
+        </div>
+      </div>
+
+      <div class="cards-grid" id="itemsGrid">
+        <!-- Rendered by app.js -->
+      </div>
+    </div>
+  </main>
+
+  <!-- Apple Bento Framework: Why It Works -->
+  <section class="bento-section">
+    <div class="container">
+      <div class="bento-header">
+        <span class="hero-eyebrow">The Design Thinking Solution</span>
+        <h2>How CampusShare re-engineers student commerce.</h2>
+      </div>
+
+      <div class="bento-grid">
+        <div class="bento-box">
+          <div class="bento-badge">Empathy Driven</div>
+          <h3>Eliminates ₹4,500 recurring fees</h3>
+          <p>Freshers avoid high upfront costs for 16-week course tools, while seniors declutter unused rooms.</p>
+        </div>
+        <div class="bento-box">
+          <div class="bento-badge">Hyper-Local</div>
+          <h3>Zero Shipping Delays</h3>
+          <p>Handover directly at the Central Library, Food Court, or Hostel Blocks. No couriers or delivery wait times.</p>
+        </div>
+        <div class="bento-box">
+          <div class="bento-badge">Trust by Domain</div>
+          <h3>100% Verified Identities</h3>
+          <p>Protected by @learner.manipal.edu credentials. Eliminates ghost buyers and transaction scams.</p>
+        </div>
+        <div class="bento-box">
+          <div class="bento-badge">Circular Impact</div>
+          <h3>Zero Academic Waste</h3>
+          <p>Extends textbook and gear lifecycles across multiple academic batches, keeping resources in circulation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal: Post Item -->
+  <div class="modal-backdrop" id="postModal">
+    <div class="modal-sheet">
+      <div class="modal-top">
+        <div>
+          <span class="modal-eyebrow">Peer Listing</span>
+          <h3 class="modal-heading">List an Item on CampusShare</h3>
+        </div>
+        <button class="modal-close-circle" id="closePostModal">&times;</button>
+      </div>
+
+      <form id="postForm" class="modal-content">
+        <div class="input-block">
+          <label>Title or Item Name</label>
+          <input type="text" id="postTitle" required placeholder="e.g. Higher Engineering Mathematics or Casio fx-991">
+        </div>
+
+        <div class="input-grid-2">
+          <div class="input-block">
+            <label>Category</label>
+            <select id="postCategory" required class="apple-select full">
+              <option value="textbook">Textbook & Notes</option>
+              <option value="calculator">Scientific Calculator</option>
+              <option value="lab">Lab Coat & Safety Kit</option>
+              <option value="food">Fresh Food & Hostel Snacks</option>
+              <option value="tech">Tech Accessory / E-Commerce Order</option>
+              <option value="subs">Digital Subscription Split</option>
+              <option value="fitness">Gym & Health Supplement</option>
+              <option value="apparel">Misfit Fashion (Unworn)</option>
+              <option value="electronics">Electronics / Arduino</option>
+              <option value="drafting">Drafting / Stationery</option>
+            </select>
+          </div>
+          <div class="input-block">
+            <label>Exchange Mode</label>
+            <select id="postMode" required class="apple-select full">
+              <option value="borrow">Free to Borrow</option>
+              <option value="rent">Rent (Weekly)</option>
+              <option value="buy">Sell (One-Time)</option>
+              <option value="flash">Flash Drop (Fast Resale)</option>
+              <option value="sos">Exam SOS (1-Day Rental)</option>
+              <option value="subs">Digital Subscription Share</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="input-grid-2">
+          <div class="input-block">
+            <label>Price or Rental Rate (₹)</label>
+            <input type="text" id="postPrice" placeholder="0 for Free, or ₹80">
+          </div>
+          <div class="input-block">
+            <label>Item Condition</label>
+            <select id="postCondition" class="apple-select full">
+              <option value="Brand New (Sealed)">Brand New (Sealed)</option>
+              <option value="Like New (Unused)">Like New (Unused)</option>
+              <option value="Good (Clean)">Good (Clean)</option>
+              <option value="Fair (Functional)">Fair (Functional)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="input-grid-2">
+          <div class="input-block">
+            <label>Your Name & Year</label>
+            <input type="text" id="postOwner" required placeholder="e.g. Peer Member (3rd Yr CSE)">
+          </div>
+          <div class="input-block">
+            <label>Campus Pickup Spot</label>
+            <input type="text" id="postLocation" required placeholder="e.g. Central Library Ground Floor">
+          </div>
+        </div>
+
+        <div class="privacy-toggle-box" style="background: #f0fdf4; border: 1px solid rgba(22, 101, 52, 0.15); border-radius: var(--apple-radius-sm); padding: 10px 12px; margin-bottom: 14px; display: flex; align-items: flex-start; gap: 8px;">
+          <input type="checkbox" id="postGhostMode" checked style="margin-top: 3px; accent-color: #0071e3;">
+          <label for="postGhostMode" style="font-size: 11.5px; color: #166534; cursor: pointer; line-height: 1.4; margin: 0;">
+            <strong>🛡️ Zero-Knowledge Ghost Privacy (Recommended)</strong><br>
+            Keep my phone number & hostel room 100% private. All communications will happen safely via in-app peer chat. Only campus public spots are shared.
+          </label>
+        </div>
+
+        <button type="submit" class="cta-pill primary full">Publish to Campus Feed</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal: Request / Claim Item -->
+  <div class="modal-backdrop" id="claimModal">
+    <div class="modal-sheet">
+      <div class="modal-top">
+        <div>
+          <span class="modal-eyebrow">Peer Handover Request</span>
+          <h3 class="modal-heading" id="claimModalTitle">Request Item</h3>
+        </div>
+        <button class="modal-close-circle" id="closeClaimModal">&times;</button>
+      </div>
+      <div class="modal-content" id="claimModalBody">
+        <!-- Rendered by app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Design Thinking Methodology -->
+  <div class="modal-backdrop" id="dtModal">
+    <div class="modal-sheet modal-wide">
+      <div class="modal-top">
+        <div>
+          <span class="modal-eyebrow">HUM_4342 Design Thinking</span>
+          <h3 class="modal-heading">Innovation Methodology Architecture</h3>
+        </div>
+        <button class="modal-close-circle" id="closeDtModal">&times;</button>
+      </div>
+      <div class="modal-content dt-grid">
+        <div class="dt-cell">
+          <span class="dt-stage-tag">Phase 1: Empathy</span>
+          <h4>Field Observation</h4>
+          <p>Audit of active campus WhatsApp trading groups revealed friction from 'DM for price' spam, rapid chat message decay, and lack of search.</p>
+        </div>
+        <div class="dt-cell">
+          <span class="dt-stage-tag">Phase 2: Analyze</span>
+          <h4>5-Whys Root Cause</h4>
+          <p>Seniors hoarded resources due to informal friction. The root cause was the absence of a structured, campus-exclusive handover platform.</p>
+        </div>
+        <div class="dt-cell">
+          <span class="dt-stage-tag">Phase 3: Solve</span>
+          <h4>Multi-Tier Exchange</h4>
+          <p>Tri-modal exchange architecture supporting Free Borrowing, Weekly Rentals, Flash Surplus Drops, and Verified Digital Subscription Splitting.</p>
+        </div>
+        <div class="dt-cell">
+          <span class="dt-stage-tag">Phase 4: Prototype</span>
+          <h4>Peer Walkthrough & Testing</h4>
+          <p>User feedback confirmed that Zero-Knowledge privacy, arrival beacons, and direct on-spot UPI eliminate student safety and scam concerns.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Apple-Style Slide-over Chat Drawer (Privacy-First Negotiation & Contact Unlock) -->
+  <aside class="chat-drawer" id="chatDrawer" aria-hidden="true">
+    <div class="drawer-header">
+      <div class="seller-profile-summary">
+        <div class="seller-avatar" id="drawerSellerAvatar">P</div>
+        <div class="seller-details">
+          <div class="seller-name-row">
+            <span class="seller-name" id="drawerSellerName">Verified Peer</span>
+            <span class="verified-tick" title="Verified Manipal Student">✓</span>
+          </div>
+          <span class="seller-domain" id="drawerSellerDomain">@learner.manipal.edu</span>
+        </div>
+      </div>
+      <button class="modal-close-circle" id="closeChatDrawer" title="Close chat">&times;</button>
+    </div>
+
+    <!-- Privacy Shield Indicator -->
+    <div class="privacy-banner">
+      <div class="privacy-icon">🛡️</div>
+      <div class="privacy-text">
+        <strong>Zero-Knowledge Safety Active</strong>
+        <p>Personal phone numbers and hostel rooms are never collected or shared. Coordinate handovers safely via in-app peer chat and direct on-spot UPI.</p>
+      </div>
+    </div>
+
+    <!-- Item Context Header -->
+    <div class="drawer-item-snippet" id="drawerItemSnippet">
+      <!-- Injected by app.js -->
+    </div>
+
+    <!-- Handover Beacon Strip -->
+    <div class="beacon-bar">
+      <button class="beacon-btn" id="pingArrivalBtn" type="button" title="Send a live arrival beacon">
+        <span>📍 Ping "I've Arrived at Spot"</span>
+      </button>
+      <button class="upi-qr-trigger-btn" id="openUpiQrBtn" type="button" title="Show Seller UPI QR for on-spot settlement">
+        <span>⚡ On-Spot UPI QR</span>
+      </button>
+    </div>
+
+    <!-- Chat Stream -->
+    <div class="chat-stream" id="chatStream">
+      <!-- Chat bubbles injected by app.js -->
+    </div>
+
+    <!-- Quick Message Suggestions -->
+    <div class="quick-chips" id="quickChips">
+      <button class="quick-chip-btn" data-msg="Hi! Is this still available today?">Available today?</button>
+      <button class="quick-chip-btn" data-msg="Can we meet at the Central Library?">Meet at Library?</button>
+      <button class="quick-chip-btn" data-msg="I'm wearing a black hoodie near the turnstile.">Black hoodie at turnstile</button>
+      <button class="quick-chip-btn" data-msg="Can we do a quick handover at Food Court?">Food Court Handover?</button>
+    </div>
+
+    <!-- Chat Input Area -->
+    <form class="chat-input-bar" id="chatInputForm">
+      <input type="text" id="chatInput" placeholder="Send a secure message to seller..." autocomplete="off">
+      <button type="submit" class="chat-send-btn" title="Send message">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="22" y1="2" x2="11" y2="13"></line>
+          <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+        </svg>
+      </button>
+    </form>
+
+    <!-- Zero-Knowledge Handover Center -->
+    <div class="drawer-unlock-box" id="drawerUnlockBox">
+      <!-- Injected by app.js: Zero-knowledge safety and on-spot settlement -->
+    </div>
+  </aside>
+
+  <!-- Drawer Backdrop Overlay -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <!-- Modal: Direct On-Spot UPI Settlement (Zero Platform Cut) -->
+  <div class="modal-backdrop" id="upiModal">
+    <div class="modal-sheet" style="max-width: 380px; text-align: center;">
+      <div class="modal-top">
+        <div>
+          <span class="modal-eyebrow">Zero Platform Cut • Direct Bank-to-Bank</span>
+          <h3 class="modal-heading">On-Spot UPI Settlement</h3>
+        </div>
+        <button class="modal-close-circle" id="closeUpiModal">&times;</button>
+      </div>
+      <div class="modal-content" style="padding: 24px;">
+        <div class="upi-card">
+          <div class="upi-qr-frame" id="upiQrFrame">
+            <!-- Simulated QR code injected by app.js -->
+          </div>
+          <div class="upi-meta" id="upiMeta">
+            <!-- Amount, Payee name, UPI handle injected by app.js -->
+          </div>
+          <div class="upi-guarantee-note">
+            <span style="font-size: 11.5px; font-weight: 500; color: #166534;">
+              🛡️ <strong>Inspect First Guarantee:</strong> Check book binding, calculator keys, or food seal physically before scanning. Zero platform escrow holding your pocket money.
+            </span>
+          </div>
+          <button class="cta-pill primary full" id="confirmUpiPaidBtn" style="margin-top: 16px;">
+            Item Inspected & Paid Directly via UPI
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Apple-Style Clean Footer -->
+  <footer class="app-footer">
+    <div class="container footer-wrap">
+      <div class="footer-links">
+        <span>© 2026–2027 Manipal Institute of Technology Bengaluru</span>
+        <span>•</span>
+        <span>Design Thinking (HUM_4342)</span>
+        <span>•</span>
+        <span>Under the Guidance of Dr. Vandana Jha</span>
+      </div>
+      <div class="footer-note">Crafted with human-centered principles for zero academic waste.</div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
