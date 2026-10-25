@@ -161,16 +161,14 @@ def create_deck():
     
     names = [
         "1. Team Member 1 (Reg. No: 2309xxxxx)",
-        "2. Team Member 2 (Reg. No: 2309xxxxx)",
-        "3. Team Member 3 (Reg. No: 2309xxxxx)",
-        "4. Team Member 4 (Reg. No: 2309xxxxx)"
+        "2. Team Member 2 (Reg. No: 2309xxxxx)"
     ]
     for n in names:
         p = tf_c1.add_paragraph()
         p.text = n
-        p.font.size = Pt(12)
+        p.font.size = Pt(13)
         p.font.color.rgb = c_white
-        p.space_after = Pt(3)
+        p.space_after = Pt(6)
 
     # Faculty Mentor Card
     card2 = s1.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(6.9), Inches(4.5), Inches(5.4), Inches(2.3))

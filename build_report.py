@@ -17,12 +17,12 @@ def generate_report():
                 run.font.size = Pt(20)
                 run.font.color.rgb = RGBColor(15, 23, 42)
 
-    # Update Table 0 (Team details)
+    # Update Table 0 (Team details - 2 Members)
     if len(doc.tables) > 0:
         table0 = doc.tables[0]
         if len(table0.rows) > 0 and len(table0.columns) > 1:
-            table0.rows[0].cells[0].text = "Submitted by:\n1. Student 1\n2. Student 2\n3. Student 3\n4. Student 4"
-            table0.rows[0].cells[1].text = "Registration No:\n2309xxxxx\n2309xxxxx\n2309xxxxx\n2309xxxxx"
+            table0.rows[0].cells[0].text = "Submitted by:\n1. Team Member 1\n2. Team Member 2"
+            table0.rows[0].cells[1].text = "Registration No:\n2309xxxxx\n2309xxxxx"
             for cell in table0.rows[0].cells:
                 for p in cell.paragraphs:
                     p.paragraph_format.space_after = Pt(2)

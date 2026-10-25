@@ -22,37 +22,39 @@ All core design and engineering work for this project is completed:
 - ✅ **Design Thinking Report**: 25+ page academic report structure (`Design Thinking Report.docx` and `build_report.py`).
 - ✅ **Widescreen Slide Deck**: 15 Apple-style slides (`Design Thinking_Presentation_Final.pptx` and `build_presentation.py`).
 - ✅ **Academic Poster**: Single-slide high-impact poster (`Design Thinking Poster.pptx` and `update_poster.py`).
-- ✅ **Video Script**: Word-for-word transcript divided across 4 speakers in [`VIDEO_SCRIPT_AND_GUIDE.md`](VIDEO_SCRIPT_AND_GUIDE.md).
+- ✅ **Video Script**: Word-for-word transcript divided across 2 speakers in [`VIDEO_SCRIPT_AND_GUIDE.md`](VIDEO_SCRIPT_AND_GUIDE.md).
 
 ---
 
 ## Step 1: Update Team Member Names & Registration Numbers
 
-Before final submission, replace the placeholder names (`Student 1`, `2309xxxxx`) with your actual team member details.
+Before final submission, replace the placeholder names (`Team Member 1`, `Team Member 2`, `2309xxxxx`) with your actual team details.
 
 ### 1. In `build_report.py` (Lines 24–25):
-Open `build_report.py` and update the team names and registration numbers:
+Open `build_report.py` and update the two student names and registration numbers:
 ```python
-# Replace Student 1-4 with your actual names and registration numbers:
-table0.rows[0].cells[0].text = "Submitted by:\n1. [Your Name]\n2. [Friend Name]\n3. [Teammate 3]\n4. [Teammate 4]"
-table0.rows[0].cells[1].text = "Registration No:\n2309xxxxx\n2309xxxxx\n2309xxxxx\n2309xxxxx"
+# Replace with your actual names and registration numbers:
+table0.rows[0].cells[0].text = "Submitted by:\n1. [Your Name]\n2. [Teammate Name]"
+table0.rows[0].cells[1].text = "Registration No:\n2309xxxxx\n2309xxxxx"
 ```
 
-### 2. In `build_presentation.py` (Title Slide):
-Update the author text on Slide 1 in `build_presentation.py`:
+### 2. In `build_presentation.py` (Slide 1 Names list):
+Update the author names in `build_presentation.py`:
 ```python
-# In make_title_slide(...)
-sub_p.text = "Submitted by: [Your Name] • [Friend Name] • [Teammate 3] • [Teammate 4]\nMentor: Dr. Vandana Jha • MIT Bengaluru"
+names = [
+    "1. [Your Name] (Reg. No: 2309xxxxx)",
+    "2. [Teammate Name] (Reg. No: 2309xxxxx)"
+]
 ```
 
 ### 3. In `update_poster.py` (Line 25):
 Open `update_poster.py` and update the author line:
 ```python
-s.text_frame.text = "Team Members: [Your Name] | [Friend Name] | [Teammate 3] | [Teammate 4]  •  Reg Nos: [2309xxxxx | 2309xxxxx | 2309xxxxx | 2309xxxxx]\nMentor: Dr. Vandana Jha, Associate Professor  •  Manipal Institute of Technology Bengaluru, MAHE"
+s.text_frame.text = "Team Members: [Your Name] | [Teammate Name]  •  Reg Nos: [2309xxxxx | 2309xxxxx]\nMentor: Dr. Vandana Jha, Associate Professor  •  Manipal Institute of Technology Bengaluru, MAHE"
 ```
 
 ### 4. In `README.md` & `VIDEO_SCRIPT_AND_GUIDE.md`:
-Update the team section at the bottom of `README.md` and the speaker division in `VIDEO_SCRIPT_AND_GUIDE.md`.
+Update the team section at the bottom of `README.md` and the speaker names in `VIDEO_SCRIPT_AND_GUIDE.md`.
 
 ---
 
@@ -101,15 +103,13 @@ To let professors and evaluators open the prototype instantly without downloadin
 
 The complete word-for-word presentation script is prepared in [`VIDEO_SCRIPT_AND_GUIDE.md`](VIDEO_SCRIPT_AND_GUIDE.md).
 
-### Quick Speaker Roles:
+### 2-Member Speaker Roles (50/50 Split):
 | Speaker | Topic | Slides / Screen | Duration |
 |---|---|---|---|
-| **Speaker 1** | Welcome, Empathy Phase, WhatsApp Problem | Slides 1–5 | ~1.5 mins |
-| **Speaker 2** | Problem Statement & 5-Whys Root Cause Analysis | Slides 6–8 | ~1.5 mins |
-| **Speaker 3** | Live Interactive Prototype Walkthrough | `prototype/index.html` in Browser | ~2.0 mins |
-| **Speaker 4** | User Feedback, Future Scope & Closing | Slides 13–15 | ~1.5 mins |
+| **Member 1 (You or Teammate)** | **Part 1:** Welcome, Academic Context, Empathy Phase, 5-Whys Analysis & Ideation | Slides 1–8 in PowerPoint (`F11`) | ~2.5 – 3.0 mins |
+| **Member 2 (Teammate or You)** | **Part 2:** Live Working Prototype Walkthrough, User Testing Feedback & Conclusion | Live Browser (`prototype/index.html` or GitHub Pages) & Slides 13–15 | ~3.0 – 3.5 mins |
 
-*(If you are working as a pair or trio, simply merge roles: Speaker 1 + 2 or Speaker 3 + 4).*
+*Total Video Duration: ~5.5 to 6.5 minutes (Target: 5 to 7 minutes).*
 
 ### Recording Checklist:
 1. **Tool**: Open Google Meet, Zoom, or OBS Studio.
