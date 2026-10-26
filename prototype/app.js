@@ -431,7 +431,7 @@ function getFormattedTime() {
   return now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
 }
 
-// Render Products Grid (Apple Design + Real-World Zero-Knowledge Privacy)
+// Render Products Grid (Clean UI + Direct Handover Privacy)
 function renderItems() {
   const filtered = items.filter(item => {
     let matchMode = false;

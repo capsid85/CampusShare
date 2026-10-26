@@ -92,11 +92,11 @@ Then visit `http://localhost:8000` in your web browser.
 ## 🏗️ Tech Stack & Architecture
 
 - **Semantic Markup**: HTML5 with ARIA accessibility roles and segmented control components.
-- **Styling**: Vanilla CSS3 featuring custom properties, glassmorphism (`backdrop-filter`), Apple Keynote-inspired typography, and responsive grid/flexbox layouts.
+- **Styling**: Vanilla CSS3 featuring custom properties, glassmorphism (`backdrop-filter`), clean modern typography, and responsive grid/flexbox layouts.
 - **Application Logic**: Vanilla JavaScript (ES6+) with zero external runtime dependencies.
   - Client-side category and keyword search filtering (`⌘K`).
   - Modal workflows (Item Listing, On-Spot UPI QR Code generation).
-  - Apple-style slide-over chat drawer with simulated peer interaction.
+  - Clean slide-over chat drawer with simulated peer interaction.
   - Dynamic countdown timers for flash drops.
 
 ---
